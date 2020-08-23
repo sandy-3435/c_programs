@@ -1,0 +1,21 @@
+//printing duplicate alphabets in aplhabetical order
+#include<stdio.h>
+int main()
+{
+    char str[100];
+    int n,i,arr[100]={0};
+    scanf("%[^\n]c",str);
+    for(i=0;str[i]!='\0';i++)
+    {
+        arr[str[i]-97]++;
+
+    }
+    for(i=0;i<26;i++)
+    {
+        if (arr[i]>=2)
+        {
+            printf("%c is duplicate in given string\n",97+i);
+        }
+    }
+
+}
