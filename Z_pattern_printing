@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    int diagonal=n;
+    for(i=1;i<=n;i++,printf("\n"))
+    {
+        if(i==1 || i==n)
+            for(j=1;j<=n;j++)
+                printf("%d ",j);
+        else
+            {
+            for (j = 1; j <= n - i; j++)
+                printf("  ");
+            printf("%d",diagonal=diagonal-1);
+
+
+        }
+    }
+}
+OUTPUT:
+enter the value:
+9
+1 2 3 4 5 6 7 8 9
+              8
+            7
+          6
+        5
+      4
+    3
+  2
+1 2 3 4 5 6 7 8 9
